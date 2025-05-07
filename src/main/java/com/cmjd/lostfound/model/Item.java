@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 public class Item {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,6 +17,8 @@ public class Item {
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private User owner;
+
+    private String description; // Added description field
 
     // Getters and setters
 
@@ -49,5 +52,13 @@ public class Item {
 
     public void setOwner(User owner) {
         this.owner = owner;
+    }
+
+    public String getDescription() { // Getter for description
+        return description;
+    }
+
+    public void setDescription(String description) { // Setter for description
+        this.description = description;
     }
 }
