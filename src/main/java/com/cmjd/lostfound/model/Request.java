@@ -1,7 +1,11 @@
 package com.cmjd.lostfound.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity
 public class Request {
     @Id
@@ -21,36 +25,5 @@ public class Request {
 
     // Getters and setters
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public User getRequester() {
-        return requester;
-    }
-
-    public void setRequester(User requester) {
-        this.requester = requester;
-    }
-
-    public Item getItem() {
-        return item;
-    }
-
-    public void setItem(Item item) {
-        this.item = item;
-    }
-
-    public RequestStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(RequestStatus status) {
-        this.status = status;
-    }
 }
 
