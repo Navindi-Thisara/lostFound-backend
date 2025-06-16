@@ -43,7 +43,7 @@ This is the backend API for the Lost and Found Application for an Educational In
 
    spring.datasource.url=jdbc:mysql://localhost:3306/lost_found_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
    spring.datasource.username=root
-   spring.datasource.password=Navi_thiz14
+   spring.datasource.password=YOUR_DATABASE_PASSWORD_HERE
 
 
 4. Set your JWT secret environment variable:
